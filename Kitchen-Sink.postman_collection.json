@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "27724142-f3be-4a4a-aff4-7a609a17abba",
+		"name": "Kitchen-Sink",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2160736",
+		"_collection_link": "https://bold-firefly-6260.postman.co/workspace/My-Workspace~738538c7-bab2-42d7-8e68-d0ee4afe2cd2/collection/2160736-27724142-f3be-4a4a-aff4-7a609a17abba?action=share&source=collection_link&creator=2160736"
+	},
+	"item": [
+		{
+			"name": "GetAllPeople",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/people?page=0&size=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"people"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Peter\",\r\n  \"lastName\": \"Lawrence\",\r\n  \"email\": \"plawrence@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/people",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"people"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Person",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/people/ewtwer-sdfgsdd-332fs5w",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"people",
+						"ewtwer-sdfgsdd-332fs5w"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
