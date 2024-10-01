@@ -29,7 +29,9 @@ Install MongoDB and configure like environment variable system (windows)
    ```
 
 3. Using MongoDB Compass
+   
    Create database = kitchensinkdb
+   
    Create collection = people
    
 5. Update application property files
