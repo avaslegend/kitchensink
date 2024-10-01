@@ -8,6 +8,13 @@ This is the migrated version of the JBoss EAP Kitchen Sink application, now buil
 - MongoDB (local)
 - Maven
 
+## Environment Setup
+1. Clone this repository:
+```bash
+   git clone <repository-url>
+   cd kitchensink
+```
+
 ## Configuration
 Install MongoDB and configure like environment variable system (windows) 
 
@@ -47,21 +54,15 @@ mvn spring-boot:run -Dspring-boot.run.profiles=<dev|qa|prod>
    * Url qa: http://localhost:8082/api/people
    * Url production: http://localhost:8083/api/people
 
-## Unit Testing
-```bash
-   mvn test
-```
-
 ## Swagger
    * Load the Swagger page from the local path:
       http://localhost:<port-of-profile>/swagger-ui/index.html
 
       The port number of the Swagger url is according to profile dev (8081) or qa (8082) or prod (8083).
-## Environment Setup
-1. Clone this repository:
+
+## Unit Testing
 ```bash
-   git clone <repository-url>
-   cd kitchensink
+   mvn test
 ```
 
 ## Postman

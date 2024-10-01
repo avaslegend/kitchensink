@@ -23,7 +23,5 @@ public class StartupLogger implements CommandLineRunner {
     public void run(String... args) throws Exception {
         logger.info("Active profile(s): {}", String.join(", ", env.getActiveProfiles()));
         logger.info("Default profile(s): {}", String.join(", ", env.getDefaultProfiles()));
-
-        //System.out.println("Active profile(s): ".concat(String.join(", ", env.getActiveProfiles())));
     }
 }
