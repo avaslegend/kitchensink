@@ -29,10 +29,10 @@ Install MongoDB and configure like environment variable system (windows)
    ```
 
 3. Using MongoDB Compass
-
-   You can see the connections and create database
-
-4. Update application property files
+   Create database = kitchensinkdb
+   Create collection = people
+   
+5. Update application property files
 
    In every properties files you need to change the property with local path of mongoDB like this example:
    ```bash
